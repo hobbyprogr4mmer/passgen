@@ -89,7 +89,7 @@ int genPass(int passcount, int charcount, Passtype type){
     // constant for ascii table vals
     const int RANDMAX = 128;
     while(passcount > 0){
-        char pass[(charcount*sizeof(int))+1];
+        char pass[charcount+1];
         for(int i = 0; i < charcount; i++){
             int r = rand();
             // match types with respective logic
