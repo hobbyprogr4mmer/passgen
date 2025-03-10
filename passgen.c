@@ -34,7 +34,7 @@ int argHandler(int argc, char *argv[], Passtype type){
     } else if(argc == 2) {
         switch(*argv[1]){
             case 'h':
-            printf("Usage:\tpassgen [type (u, l, n, m, s)] [character count integer] [password count integer]\n\t type flags are: upper, lower, number, mixed, special\n");
+            printf("Usage:\tpassgen [type (u, l, n, m, s)] [password count integer] [character count integer]\n\t type flags are: upper, lower, number, mixed, special\n");
             break;
 
             default:
